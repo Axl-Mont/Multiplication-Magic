@@ -6,10 +6,7 @@ El programa utiliza dos funciones: busquedaDeFactores() y busquedaDeMultiplicaci
 
 Además, la función inicio() permite al usuario realizar hasta 10 intentos para ingresar un número y encontrar sus pares de factores.
 
-El código ha sido refactorizado para mejorar su legibilidad y robustez. Se eliminó código redundante, se definieron variables localmente y se evitó el uso de variables globales.
-
 Este programa puede ser útil para quienes quieran encontrar los factores enteros de un número y entender mejor su descomposición en números primos.
-
 
 ## Requisitos
 Python 3.x
