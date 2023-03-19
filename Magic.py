@@ -1,15 +1,15 @@
 factores=[]
 
 def inicio():
-        print('¿Le gustaría saber qué pares de números enteros, cuando son multiplicados entre sí, dan como resultado un número que usted elija?')
+        print('¿Le gustaría saber qué pares de números enteros, cuando son multiplicados entre sí, dan como resultado un número que usted elija?\n')
         number=int(input('Si es así, por favor ingrese el número que desea investigar: '))
         if esPrimo(number):
-                print (f'El numero {number} es un numero primo, no posee esta caracteristica')
+                print (f'\nEl numero {number} es un numero primo, no posee esta caracteristica')
         elif number != 0 and number > 1:
                 busquedaDeFactores(number)
                 busquedaDeMultiplicacion (number)
         else:
-                print('0 y 1 no son elegibles, intenta con otro numero')
+                print('\n0 y 1 no son elegibles, intenta con otro numero')
 
 def busquedaDeFactores(n):
         cont = 1
@@ -19,6 +19,7 @@ def busquedaDeFactores(n):
                 cont +=1
 
 def busquedaDeMultiplicacion(n):
+    print('\n Resultado: \n')
     for i in range(len(factores)):
         for j in range(len(factores)):
             if factores[i] * factores[j] == n:
